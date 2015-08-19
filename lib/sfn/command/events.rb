@@ -66,7 +66,7 @@ module Sfn
           end
         end.flatten.compact
         stack_events.sort do |x,y|
-          Time.parse(x[:time].to_s) <=> Time.parse(y[:time].to_s)
+          Time.parse(x.fetch(:time, Time.now).to_s) <=> Time.parse(y.fetch(:time, Time.now).to_s)
         end
       end
 
