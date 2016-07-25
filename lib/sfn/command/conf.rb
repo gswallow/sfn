@@ -86,8 +86,8 @@ Configuration.new do
     #  AWS credentials information
     aws_access_key_id ENV['AWS_ACCESS_KEY_ID']
     aws_secret_access_key ENV['AWS_SECRET_ACCESS_KEY']
-    aws_region ENV['AWS_REGION']
-    aws_bucket_region ENV['AWS_REGION']
+    aws_region ENV['AWS_DEFAULT_REGION']
+    aws_bucket_region ENV['AWS_DEFAULT_REGION']
     # aws_sts_role_arn ENV['AWS_STS_ROLE_ARN']
     #  Eucalyptus related additions
     # api_endpoint ENV['EUCA_ENDPOINT']
